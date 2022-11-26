@@ -6,7 +6,7 @@
 #include <typeinfo>
 
 
-#include "LuaGlue/LuaGlueCompat.h"
+#include <LuaGlue/LuaGlueCompat.h>
 
 template<class T>
 class LuaGlueSymTab

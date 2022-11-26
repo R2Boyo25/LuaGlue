@@ -240,7 +240,7 @@ inline void LuaGlueLuaValue::load(LuaGlueBase* b, lua_State* s, int idx)
 	}
 }
 
-#include "LuaGlue/LuaGlueLuaFunction.h"
+#include <LuaGlue/LuaGlueLuaFunction.h>
 
 inline void LuaGlueLuaValue::load_function(LuaGlueBase* b, lua_State* s, int idx)
 {
@@ -250,7 +250,7 @@ inline void LuaGlueLuaValue::load_function(LuaGlueBase* b, lua_State* s, int idx
 	_data.type_value = new LuaGlueTypeValue<LuaGlueLuaFunction>(function, nullptr, true);
 }
 
-#include "LuaGlue/LuaGlueLuaTable.h"
+#include <LuaGlue/LuaGlueLuaTable.h>
 
 inline void LuaGlueLuaValue::load_table(LuaGlueBase* b, lua_State* s, int idx)
 {
@@ -260,7 +260,7 @@ inline void LuaGlueLuaValue::load_table(LuaGlueBase* b, lua_State* s, int idx)
 	_data.type_value = new LuaGlueTypeValue<LuaGlueLuaTable>(table, nullptr, true);
 }
 
-#include "LuaGlue/LuaGlueLuaUserData.h"
+#include <LuaGlue/LuaGlueLuaUserData.h>
 
 inline std::string LuaGlueLuaValue::userdata_tostring()
 {

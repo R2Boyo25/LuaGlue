@@ -3,8 +3,8 @@
 
 class LuaGlueBase;
 
-#include "LuaGlue/LuaGlueStackTemplates.h"
-//#include "LuaGlue/ApplyTuple/StdFunc.h"
+#include <LuaGlue/LuaGlueStackTemplates.h>
+//#include <LuaGlue/ApplyTuple/StdFunc.h>
 
 template<typename _Ret, typename... _Args>
 class LuaGlueStdFuncWrapper
@@ -141,6 +141,6 @@ class LuaGlueStdFuncWrapper<void, _Args...>
 		ArgsTuple args;
 };
 
-#include "LuaGlue/StackTemplates/StdFunction.h"
+#include <LuaGlue/StackTemplates/StdFunction.h>
 
 #endif /* LUAGLUE_STDFUNC_WRAPPER_H_GUARD */

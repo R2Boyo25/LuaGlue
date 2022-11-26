@@ -5,10 +5,10 @@
 #include <atomic>
 #include <stdexcept>
 
-#include "LuaGlue/LuaGlueDebug.h"
-#include "LuaGlue/LuaGlueTypeValueBase.h"
+#include <LuaGlue/LuaGlueDebug.h>
+#include <LuaGlue/LuaGlueTypeValueBase.h>
 
-#include "LuaGlue/LuaGlueTypeBase.h"
+#include <LuaGlue/LuaGlueTypeBase.h>
 
 #define CastLuaGlueTypeValue(ClassType, o) ((LuaGlueTypeValue<ClassType> *)o)
 #define CastLuaGlueTypeValueShared(ClassType, o) ( (LuaGlueTypeValue<std::shared_ptr<ClassType>> *)o )
@@ -275,6 +275,6 @@ class LuaGlueTypeValue<std::shared_ptr<_Class>> : public LuaGlueTypeValueBase
 		LuaGlueTypeValueImplBase *p;
 };
 
-#include "LuaGlue/StackTemplates/TypeValue.h"
+#include <LuaGlue/StackTemplates/TypeValue.h>
 
 #endif /* LUAGLUE_TYPE_VALUE_H_GUARD */

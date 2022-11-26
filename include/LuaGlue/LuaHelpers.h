@@ -1,8 +1,8 @@
 #ifndef LUAGLUE_LUAHELPERS_H_GUARD
 #define LUAGLUE_LUAHELPERS_H_GUARD
 
-#include "LuaGlue/LuaGlueBase.h"
-#include "LuaGlue/LuaGlueStackTemplates.h"
+#include <LuaGlue/LuaGlueBase.h>
+#include <LuaGlue/LuaGlueStackTemplates.h>
 
 class LuaHelpers
 {

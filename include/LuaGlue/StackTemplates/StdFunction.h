@@ -2,8 +2,8 @@
 #define LUAGLUE_STACKTEMPLATES_STDFUNCTION_H_GUARD
 
 // FIXME: LuaGlueLuaFuncRef should turn into a LuaGlueType subclass
-#include "LuaGlue/LuaGlueLuaFuncRef.h"
-#include "LuaGlue/LuaGlueStdFuncWrapper.h"
+#include <LuaGlue/LuaGlueLuaFuncRef.h>
+#include <LuaGlue/LuaGlueStdFuncWrapper.h>
 
 	template<typename _Ret, typename... _Args>
 	inline std::function<_Ret(_Args...)> stack<std::function<_Ret(_Args...)>&>::get(LuaGlueBase *b, lua_State *s, int idx)

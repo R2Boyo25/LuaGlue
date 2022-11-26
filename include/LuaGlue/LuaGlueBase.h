@@ -3,7 +3,7 @@
 
 struct lua_State;
 class LuaGlueTypeBase;
-#include "LuaGlue/LuaGlueSymTab.h"
+#include <LuaGlue/LuaGlueSymTab.h>
 //template<typename T> class LuaGlueSymTab;
 
 class LuaGlueBase

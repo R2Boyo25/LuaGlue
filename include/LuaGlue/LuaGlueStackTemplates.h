@@ -1,12 +1,12 @@
 #ifndef LUAGLUE_STACK_TEMPLATES_H_GUARD
 #define LUAGLUE_STACK_TEMPLATES_H_GUARD
 
-#include <lua.hpp>
+#include <lua5.4/lua.hpp>
 #include <cstdint>
 #include <memory.h>
 
-#include "LuaGlue/LuaGlueTypeBase.h"
-#include "LuaGlue/LuaGlueUtils.h"
+#include <LuaGlue/LuaGlueTypeBase.h>
+#include <LuaGlue/LuaGlueUtils.h>
 
 class LuaGlueBase;
 
@@ -355,7 +355,7 @@ struct stack<const std::string &> {
 	static void put(LuaGlueBase *, lua_State *s, std::string *v);
 };
 
-//#include "LuaGlue/LuaGlueLuaValue.h"
+//#include <LuaGlue/LuaGlueLuaValue.h>
 class LuaGlueLuaValue;
 template<>
 struct stack<LuaGlueLuaValue> {
@@ -369,12 +369,12 @@ struct stack<const LuaGlueLuaValue&> {
 	static void put(LuaGlueBase *b, lua_State *s, LuaGlueLuaValue& v);
 };
 
-#include "LuaGlue/LuaGlueUtils.h"
+#include <LuaGlue/LuaGlueUtils.h>
 
 template<class T>
 class LuaGlueClass;
 
-#include "LuaGlue/StackTemplates/StaticObj.h"
+#include <LuaGlue/StackTemplates/StaticObj.h>
 
 #endif /* LUAGLUE_STACK_TEMPLATES_H_GUARD */
 

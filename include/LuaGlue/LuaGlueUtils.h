@@ -97,7 +97,7 @@ inline void lua_dump_stack_(const char *file, int line, const char *func, lua_St
 	printf("\n");  /* end the listing */
 }
 
-#include "LuaGlue/LuaGlueTypeBase.h"
+#include <LuaGlue/LuaGlueTypeBase.h>
 
 inline void lua_dump_userdata(lua_State *L, int idx)
 {

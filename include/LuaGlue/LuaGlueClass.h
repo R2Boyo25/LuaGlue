@@ -7,16 +7,16 @@
 #include <map>
 #include <new>
 
-#include "LuaGlue/LuaGlueTypeValue.h"
-#include "LuaGlue/LuaGlueConstant.h"
-#include "LuaGlue/LuaGlueMethodBase.h"
-#include "LuaGlue/LuaGluePropertyBase.h"
-#include "LuaGlue/LuaGlueSymTab.h"
+#include <LuaGlue/LuaGlueTypeValue.h>
+#include <LuaGlue/LuaGlueConstant.h>
+#include <LuaGlue/LuaGlueMethodBase.h>
+#include <LuaGlue/LuaGluePropertyBase.h>
+#include <LuaGlue/LuaGlueSymTab.h>
 
-#include "LuaGlue/LuaGlueUtils.h"
-#include "LuaGlue/LuaGlueDebug.h"
+#include <LuaGlue/LuaGlueUtils.h>
+#include <LuaGlue/LuaGlueDebug.h>
 
-#include "LuaGlue/LuaGlueBase.h"
+#include <LuaGlue/LuaGlueBase.h>
 
 template<typename _Class, typename... _Args>
 class LuaGlueCtorMethod;
@@ -60,11 +60,11 @@ class LuaGlueDirectProperty<std::shared_ptr<_Type>, _Class>;
 template<typename _Type, typename _Class>
 class LuaGlueProperty;
 
-//#include "LuaGlue/LuaGlueProperty.h"
+//#include <LuaGlue/LuaGlueProperty.h>
 
-#include "LuaGlue/LuaGlueType.h"
+#include <LuaGlue/LuaGlueType.h>
 
-#include "LuaGlue/LuaGlueArray.h"
+#include <LuaGlue/LuaGlueArray.h>
 
 template<typename _Class>
 class LuaGlueClass : public LuaGlueType<_Class>

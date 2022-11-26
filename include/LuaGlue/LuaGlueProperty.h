@@ -1,13 +1,13 @@
 #ifndef LUAGLUE_PROPERTY_H_GUARD
 #define LUAGLUE_PROPERTY_H_GUARD
 
-#include <lua.hpp>
+#include <lua5.4/lua.hpp>
 #include <string>
 
-#include "LuaGlue/LuaGlueTypeValue.h"
-#include "LuaGlue/LuaGlueApplyTuple.h"
-#include "LuaGlue/LuaGluePropertyBase.h"
-#include "LuaGlue/LuaGlueBase.h"
+#include <LuaGlue/LuaGlueTypeValue.h>
+#include <LuaGlue/LuaGlueApplyTuple.h>
+#include <LuaGlue/LuaGluePropertyBase.h>
+#include <LuaGlue/LuaGlueBase.h>
 
 template<class _Class>
 class LuaGlueClass;

@@ -1,14 +1,14 @@
 #ifndef LUAGLUE_FUNCTION_H_GUARD
 #define LUAGLUE_FUNCTION_H_GUARD
 
-#include <lua.hpp>
+#include <lua5.4/lua.hpp>
 #include <string>
 #include <tuple>
 #include <utility>
 
-#include "LuaGlue/LuaGlueApplyTuple.h"
-#include "LuaGlue/LuaGlueFunctionBase.h"
-#include "LuaGlue/LuaGlueBase.h"
+#include <LuaGlue/LuaGlueApplyTuple.h>
+#include <LuaGlue/LuaGlueFunctionBase.h>
+#include <LuaGlue/LuaGlueBase.h>
 
 template<typename _Ret, typename... _Args>
 class LuaGlueFunction : public LuaGlueFunctionBase

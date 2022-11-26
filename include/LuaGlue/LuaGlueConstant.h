@@ -3,9 +3,9 @@
 
 #include <string>
 #include <stdexcept>
-#include <lua.hpp>
+#include <lua5.4/lua.hpp>
 
-#include "LuaGlue/LuaGlueBase.h"
+#include <LuaGlue/LuaGlueBase.h>
 
 class LuaGlueConstant
 {

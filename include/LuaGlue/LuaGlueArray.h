@@ -2,9 +2,9 @@
 #define LUAGLUE_ARRAY_H_GUARD
 
 #include <stdexcept>
-#include "LuaGlue/LuaGlueTypeBase.h"
-#include "LuaGlue/LuaHelpers.h"
-#include "LuaGlue/LuaGlueType.h"
+#include <LuaGlue/LuaGlueTypeBase.h>
+#include <LuaGlue/LuaHelpers.h>
+#include <LuaGlue/LuaGlueType.h>
 
 template<int N, typename T>
 class LuaGlueStaticArray

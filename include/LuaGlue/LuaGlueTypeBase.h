@@ -4,7 +4,7 @@
 #include <random>
 #include <chrono>
 
-#include <lua.hpp>
+#include <lua5.4/lua.hpp>
 
 #if LUAI_BITSINT > 32
 #	define chrono_period std::chrono::nanoseconds
@@ -14,7 +14,7 @@
 #	define chrono_period std::chrono::milliseconds
 #endif
 
-#include "LuaGlue/LuaGlueDebug.h"
+#include <LuaGlue/LuaGlueDebug.h>
 
 class LuaGlueBase;
 

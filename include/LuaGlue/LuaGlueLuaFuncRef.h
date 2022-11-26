@@ -5,11 +5,11 @@
 
 //#error "use LuaGlueLuaFunction instead"
 
-#include <lua.hpp>
+#include <lua5.4/lua.hpp>
 #include <lauxlib.h>
 
-#include "LuaGlue/LuaGlueDebug.h"
-#include "LuaGlue/LuaGlueStackTemplates.h"
+#include <LuaGlue/LuaGlueDebug.h>
+#include <LuaGlue/LuaGlueStackTemplates.h>
 
 class LuaGlueBase;
 

@@ -3,11 +3,11 @@
 
 #include <cassert>
 
-#include "LuaGlue/LuaGlueBase.h"
+#include <LuaGlue/LuaGlueBase.h>
 
-#include "LuaGlue/LuaGlueTypeBase.h"
-#include "LuaGlue/LuaGlueTypeValue.h"
-#include "LuaGlue/LuaHelpers.h"
+#include <LuaGlue/LuaGlueTypeBase.h>
+#include <LuaGlue/LuaGlueTypeValue.h>
+#include <LuaGlue/LuaHelpers.h>
 
 template<typename _Type>
 class LuaGlueType : public LuaGlueTypeBase

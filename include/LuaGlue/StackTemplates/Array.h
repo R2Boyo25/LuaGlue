@@ -2,9 +2,9 @@
 #define LUAGLUE_STACKTEMPLATES_ARRAY_H_GUARD
 
 // FIXME: turn array into LuaGlueType subclass
-//#include "LuaGlue/LuaGlueArray.h"
+//#include <LuaGlue/LuaGlueArray.h>
 
-#include "LuaGlue/LuaGlueUtils.h"
+#include <LuaGlue/LuaGlueUtils.h>
 
 template<int N, typename T>
 class LuaGlueStaticArray;

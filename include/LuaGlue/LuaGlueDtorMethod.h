@@ -1,14 +1,14 @@
 #ifndef LUAGLUE_DTOR_METHOD_H_GUARD
 #define LUAGLUE_DTOR_METHOD_H_GUARD
 
-#include <lua.hpp>
+#include <lua5.4/lua.hpp>
 #include <string>
 #include <tuple>
 #include <utility>
 
-#include "LuaGlue/LuaGlueTypeValue.h"
-#include "LuaGlue/LuaGlueApplyTuple.h"
-#include "LuaGlue/LuaGlueBase.h"
+#include <LuaGlue/LuaGlueTypeValue.h>
+#include <LuaGlue/LuaGlueApplyTuple.h>
+#include <LuaGlue/LuaGlueBase.h>
 
 template<typename _Class>
 class LuaGlueClass;

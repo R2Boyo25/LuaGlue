@@ -1,8 +1,8 @@
 #ifndef LUAGLUE_STACKTEMPLATES_SHAREDPTR_H_GUARD
 #define LUAGLUE_STACKTEMPLATES_SHAREDPTR_H_GUARD
 
-#include "LuaGlue/LuaGlueTypeValue.h"
-#include "LuaGlue/LuaGlueClass.h"
+#include <LuaGlue/LuaGlueTypeValue.h>
+#include <LuaGlue/LuaGlueClass.h>
 	
 	template<class T>
 	inline std::shared_ptr<T> stack<std::shared_ptr<T>>::get(LuaGlueBase *g, lua_State *s, int idx)

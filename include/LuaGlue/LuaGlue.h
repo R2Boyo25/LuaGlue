@@ -4,18 +4,18 @@
 #include <stdlib.h>
 #include <memory.h>
 #include <string.h>
-#include <lua.hpp>
+#include <lua5.4/lua.hpp>
 #include <lauxlib.h>
 #include <string>
 #include <map>
 #include <typeinfo>
 #include <memory>
 
-#include "LuaGlue/LuaGlueBase.h"
-#include "LuaGlue/LuaGlueStackTemplates.h"
-#include "LuaGlue/LuaGlueType.h"
-#include "LuaGlue/LuaGlueFunctionBase.h"
-#include "LuaGlue/LuaGlueSymTab.h"
+#include <LuaGlue/LuaGlueBase.h>
+#include <LuaGlue/LuaGlueStackTemplates.h>
+#include <LuaGlue/LuaGlueType.h>
+#include <LuaGlue/LuaGlueFunctionBase.h>
+#include <LuaGlue/LuaGlueSymTab.h>
 
 template<typename _Class>
 class LuaGlueClass;
@@ -405,25 +405,25 @@ inline _Class LuaGlue::getGlobal(const char *name)
 	return ret;
 }
 
-#include "LuaGlue/LuaGlueClass.h"
-#include "LuaGlue/LuaGlueConstant.h"
-#include "LuaGlue/LuaGlueCtorMethod.h"
-#include "LuaGlue/LuaGlueDtorMethod.h"
-#include "LuaGlue/LuaGlueMethod.h"
-#include "LuaGlue/LuaGlueFunction.h"
-#include "LuaGlue/LuaGlueStaticMethod.h"
-#include "LuaGlue/LuaGlueIndexMethod.h"
-#include "LuaGlue/LuaGlueNewIndexMethod.h"
-#include "LuaGlue/LuaGlueProperty.h"
+#include <LuaGlue/LuaGlueClass.h>
+#include <LuaGlue/LuaGlueConstant.h>
+#include <LuaGlue/LuaGlueCtorMethod.h>
+#include <LuaGlue/LuaGlueDtorMethod.h>
+#include <LuaGlue/LuaGlueMethod.h>
+#include <LuaGlue/LuaGlueFunction.h>
+#include <LuaGlue/LuaGlueStaticMethod.h>
+#include <LuaGlue/LuaGlueIndexMethod.h>
+#include <LuaGlue/LuaGlueNewIndexMethod.h>
+#include <LuaGlue/LuaGlueProperty.h>
 
-#include "LuaGlue/StackTemplates/Array.h"
-#include "LuaGlue/StackTemplates/Numeric.h"
-#include "LuaGlue/StackTemplates/Ptr.h"
-#include "LuaGlue/StackTemplates/SharedPtr.h"
-#include "LuaGlue/StackTemplates/StaticObj.h"
-#include "LuaGlue/StackTemplates/StdFunction.h"
-#include "LuaGlue/StackTemplates/String.h"
-#include "LuaGlue/StackTemplates/TypeValue.h"
-#include "LuaGlue/StackTemplates/LuaValue.h"
+#include <LuaGlue/StackTemplates/Array.h>
+#include <LuaGlue/StackTemplates/Numeric.h>
+#include <LuaGlue/StackTemplates/Ptr.h>
+#include <LuaGlue/StackTemplates/SharedPtr.h>
+#include <LuaGlue/StackTemplates/StaticObj.h>
+#include <LuaGlue/StackTemplates/StdFunction.h>
+#include <LuaGlue/StackTemplates/String.h>
+#include <LuaGlue/StackTemplates/TypeValue.h>
+#include <LuaGlue/StackTemplates/LuaValue.h>
 
 #endif /* LUAGLUE_H_GUARD */
