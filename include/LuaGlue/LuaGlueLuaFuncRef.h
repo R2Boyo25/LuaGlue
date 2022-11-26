@@ -6,7 +6,7 @@
 //#error "use LuaGlueLuaFunction instead"
 
 #include <lua5.4/lua.hpp>
-#include <lauxlib.h>
+#include <lua5.4/lauxlib.h>
 
 #include <LuaGlue/LuaGlueDebug.h>
 #include <LuaGlue/LuaGlueStackTemplates.h>

@@ -5,7 +5,7 @@
 #include <memory.h>
 #include <string.h>
 #include <lua5.4/lua.hpp>
-#include <lauxlib.h>
+#include <lua5.4/lauxlib.h>
 #include <string>
 #include <map>
 #include <typeinfo>
